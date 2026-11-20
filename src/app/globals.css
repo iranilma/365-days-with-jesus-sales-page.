@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-jakarta: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: #FAF6F0;
+  color: #55443F;
+  font-family: var(--font-jakarta);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Elegant serif heading hierarchy */
+h1, h2, h3, .font-serif {
+  font-family: var(--font-cormorant);
+}
+
+/* Custom scrollbars that feel serene and calm */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D0C8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A89587;
+}
+
+/* Devotional Reader Typography Scaling */
+article[data-font-size="normal"] .dev-scripture-text { font-size: 1.5rem !important; line-height: 2.1rem !important; }
+article[data-font-size="normal"] .dev-reflection-body { font-size: 1.125rem !important; line-height: 1.85rem !important; }
+article[data-font-size="normal"] .dev-prayer-body { font-size: 1.125rem !important; line-height: 1.85rem !important; }
+article[data-font-size="normal"] .dev-intention-text { font-size: 1.125rem !important; line-height: 1.6rem !important; }
+article[data-font-size="normal"] .dev-action-text { font-size: 0.95rem !important; line-height: 1.5rem !important; }
+article[data-font-size="normal"] .dev-evening-text { font-size: 1.05rem !important; line-height: 1.6rem !important; }
+article[data-font-size="normal"] .dev-question-item { font-size: 0.95rem !important; line-height: 1.5rem !important; }
+
+article[data-font-size="large"] .dev-scripture-text { font-size: 1.85rem !important; line-height: 2.45rem !important; }
+article[data-font-size="large"] .dev-reflection-body { font-size: 1.35rem !important; line-height: 2.15rem !important; }
+article[data-font-size="large"] .dev-prayer-body { font-size: 1.35rem !important; line-height: 2.15rem !important; }
+article[data-font-size="large"] .dev-intention-text { font-size: 1.35rem !important; line-height: 1.85rem !important; }
+article[data-font-size="large"] .dev-action-text { font-size: 1.125rem !important; line-height: 1.75rem !important; }
+article[data-font-size="large"] .dev-evening-text { font-size: 1.25rem !important; line-height: 1.85rem !important; }
+article[data-font-size="large"] .dev-question-item { font-size: 1.125rem !important; line-height: 1.75rem !important; }
+
+article[data-font-size="xlarge"] .dev-scripture-text { font-size: 2.25rem !important; line-height: 2.95rem !important; }
+article[data-font-size="xlarge"] .dev-reflection-body { font-size: 1.6rem !important; line-height: 2.5rem !important; }
+article[data-font-size="xlarge"] .dev-prayer-body { font-size: 1.6rem !important; line-height: 2.5rem !important; }
+article[data-font-size="xlarge"] .dev-intention-text { font-size: 1.6rem !important; line-height: 2.15rem !important; }
+article[data-font-size="xlarge"] .dev-action-text { font-size: 1.3rem !important; line-height: 1.95rem !important; }
+article[data-font-size="xlarge"] .dev-evening-text { font-size: 1.45rem !important; line-height: 2.15rem !important; }
+article[data-font-size="xlarge"] .dev-question-item { font-size: 1.3rem !important; line-height: 1.95rem !important; }
+
+/* High-Fidelity Print Styling for US Letter and A4 */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #2D2320 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  .print\\:hidden {
+    display: none !important;
+  }
+
+  .print\\:block {
+    display: block !important;
+  }
+
+  /* Ruled lines for writing by hand in printed journals */
+  .ruled-line {
+    border-bottom: 1px solid #D9D0C8 !important;
+    height: 1.6rem;
+  }
+
+  /* Force clean page breaks */
+  .page-break-before {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .page-break-after {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .avoid-break-inside {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}
+
+/* US Letter Print Dimensions */
+@page us-letter {
+  size: letter portrait;
+  margin: 0.5in;
+}
+
+/* ISO A4 Print Dimensions */
+@page a4-format {
+  size: A4 portrait;
+  margin: 12mm;
+}
