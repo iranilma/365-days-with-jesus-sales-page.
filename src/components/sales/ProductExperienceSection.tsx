@@ -52,12 +52,12 @@ export function ProductExperienceSection() {
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-sanctuary-taupeLight/70 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
             <div>
               {/* Visual Preview */}
-              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-6 bg-sanctuary-blushLight flex items-center justify-center p-3 border border-sanctuary-taupeLight/40">
+              <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden mb-6 bg-sanctuary-blushLight border border-sanctuary-taupeLight/40 shadow-inner">
                 <Image
-                  src="/images/pdf-edition-preview.png"
-                  alt="Downloadable PDF Edition Preview showing book cover and interior pages"
+                  src="/images/pdf-edition-highres.jpg"
+                  alt="Downloadable PDF Edition Preview showing book cover and Day 34 & 35 devotional printable pages"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
 
@@ -93,12 +93,12 @@ export function ProductExperienceSection() {
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-sanctuary-taupeLight/70 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
             <div>
               {/* Visual Preview */}
-              <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-6 bg-sanctuary-ivory flex items-center justify-center p-3 border border-sanctuary-taupeLight/40">
+              <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden mb-6 bg-sanctuary-ivory border border-sanctuary-taupeLight/40 shadow-inner">
                 <Image
-                  src="/images/web-edition-preview.png"
-                  alt="Interactive Web Edition preview showing responsive tablet and smartphone layout"
+                  src="/images/web-edition-highres.jpg"
+                  alt="Interactive Web Edition preview showing responsive laptop and smartphone layout with Day 34"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
 
