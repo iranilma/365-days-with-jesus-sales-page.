@@ -21,7 +21,7 @@ export function ProductExperienceSection() {
     <section id="experience" className="py-12 sm:py-16 lg:py-20 relative bg-sanctuary-ivoryLight/60 border-y border-sanctuary-taupeLight/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Heading */}
-        <div className="text-center max-w-2xl mx-auto space-y-3 mb-12 sm:mb-16">
+        <div className="text-center max-w-2xl mx-auto space-y-3 mb-8 sm:mb-12">
           <span className="text-[11px] font-sans font-bold tracking-widest uppercase text-sanctuary-taupe block">
             Flexible Quiet Time
           </span>
@@ -32,6 +32,18 @@ export function ProductExperienceSection() {
             Whether you love saving pages to your tablet, reading on the go, or
             immersing yourself in our interactive digital sanctuary.
           </p>
+        </div>
+
+        {/* Master Bundle Composition Visual Showcase */}
+        <div className="max-w-4xl mx-auto mb-12 rounded-3xl overflow-hidden shadow-lg border border-sanctuary-taupeLight/60 bg-white/60 p-2 sm:p-3">
+          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl overflow-hidden">
+            <Image
+              src="/images/bundle-mockup-open-book-laptop.jpg"
+              alt="365 Days With Jesus Complete Digital Bundle featuring open devotional book, laptop sanctuary, tablet, and smartphone"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
         {/* Two Product Cards Grid */}

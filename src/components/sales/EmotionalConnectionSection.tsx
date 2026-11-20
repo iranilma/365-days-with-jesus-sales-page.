@@ -15,10 +15,10 @@ export function EmotionalConnectionSection() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             {/* Left: Atmospheric Lifestyle Photograph */}
             <div className="md:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-xs aspect-[4/3] sm:aspect-square rounded-2xl overflow-hidden shadow-md border-2 border-sanctuary-blush">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md border-2 border-sanctuary-blush">
                 <Image
-                  src="/images/lifestyle-morning-coffee.jpg"
-                  alt="A woman enjoying an unhurried, peaceful morning devotional moment with coffee"
+                  src="/images/bundle-mockup-lifestyle-journey.jpg"
+                  alt="A woman enjoying an unhurried, peaceful morning devotional moment with Scripture and reflection journal"
                   fill
                   className="object-cover"
                 />

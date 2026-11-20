@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/images/product-mockup-hero.jpg",
+        url: "/images/bundle-mockup-books-devices.jpg",
         width: 1024,
         height: 682,
         alt: "365 Days With Jesus - Complete Digital Bundle",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "365 Days With Jesus | A Daily Devotional for Women",
     description:
       "A Year of Faith. A Daily Moment With Him. Complete Digital Bundle including Downloadable PDF & Interactive Web Edition for $17 USD.",
-    images: ["/images/product-mockup-hero.jpg"],
+    images: ["/images/bundle-mockup-books-devices.jpg"],
   },
 };
 

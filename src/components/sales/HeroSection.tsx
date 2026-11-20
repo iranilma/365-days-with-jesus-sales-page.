@@ -85,7 +85,7 @@ export function HeroSection({ onOpenCheckout }: HeroSectionProps) {
 
             <div className="relative w-full max-w-lg lg:max-w-none rounded-3xl overflow-hidden shadow-xl border border-sanctuary-taupeLight/50 bg-white/40 backdrop-blur-sm group transition-transform duration-500 hover:scale-[1.01]">
               <Image
-                src="/images/product-mockup-hero.jpg"
+                src="/images/bundle-mockup-books-devices.jpg"
                 alt="365 Days With Jesus Devotional Book, Tablet, and Smartphone Mockup"
                 width={1024}
                 height={682}
